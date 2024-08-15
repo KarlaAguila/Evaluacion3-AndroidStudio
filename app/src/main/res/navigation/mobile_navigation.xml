@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.evaluacion32.ui.home.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_administrador"
+        android:name="com.example.evaluacion32.AdministradorFragment"
+        android:label="@string/administrador"
+        tools:layout="@layout/fragment_administrador" />
+    <fragment
+        android:id="@+id/nav_confirmacion"
+        android:name="com.example.evaluacion32.ConfirmacionFragment"
+        android:label="@string/confirmacion"
+        tools:layout="@layout/fragment_confirmacion" />
+    <fragment
+        android:id="@+id/nav_bienvenida"
+        android:name="com.example.evaluacion32.BienvenidaFragment"
+        android:label="@string/bienvenida"
+        tools:layout="@layout/fragment_bienvenida" />
+    <fragment
+        android:id="@+id/nav_formulario"
+        android:name="com.example.evaluacion32.FormularioFragment"
+        android:label="@string/formulario"
+        tools:layout="@layout/fragment_formulario" />
+    <action
+        android:id="@+id/action_nav_formulario_to_nav_confirmacion"
+        app:destination="@id/nav_confirmacion" />
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.evaluacion32.InicioFragment"
+        android:label="@string/inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/nav_informativa"
+        android:name="com.example.evaluacion32.InformativaFragment"
+        android:label="@string/informativa"
+        tools:layout="@layout/fragment_informativa" />
+</navigation>

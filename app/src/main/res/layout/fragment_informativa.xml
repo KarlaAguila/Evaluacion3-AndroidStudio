@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InformativaFragment">
+
+    <!-- Logo de la empresa -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo" />
+
+    <!-- Título de bienvenida -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/courgette"
+        android:text="¡Bienvenido a RIMBERIO!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <!-- Descripción breve de servicios/productos -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeTitle"
+        android:layout_marginBottom="16dp"
+        android:text="Ofrecemos una amplia gama de productos y servicios para satisfacer tus necesidades."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center" />
+
+    <!-- Imagen de promoción/oferta especial -->
+    <ImageView
+        android:id="@+id/promoImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/description"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/descuento" />
+
+    <!-- Dirección y mapa -->
+    <TextView
+        android:id="@+id/addressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promoImage"
+        android:text="Nuestra Ubicación:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressTitle"
+        android:text="1234 Calle Malintzi, Tlaxcala, Mexico"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/address"
+        android:scaleType="centerCrop"
+        android:src="@drawable/maps" />
+
+</RelativeLayout>
